@@ -3,7 +3,7 @@ var md = window.markdownit()
         .use(markdownitContainer),
     warning;
 
-$.get("../tutorial1.md", function (data) {
+$.get("../README.md", function (data) {
     $('#content-markdown').html(md.render(data));
 
 
