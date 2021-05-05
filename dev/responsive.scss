@@ -1,0 +1,205 @@
+@media screen and (max-width: 768px) {
+
+
+  //
+  //.notes-images {
+  //  position: relative;
+  //  display: contents;
+  //  margin-left: 0;
+  //
+  //}
+  //
+  //.footnote {
+  //  float: right;
+  //  width: 100%;
+  //  margin: 0px;
+  //  clear: both;
+  //  padding-bottom: 10px;
+  //}
+
+
+}
+
+@media screen and (max-width: 667px) {
+
+  #main {
+    margin-left: 0;
+    padding: 0;
+  }
+  em {
+
+    display: block;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  article {
+    margin-left: 0;
+    padding-right: 2.5vw;
+    display: contents;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+
+  article h3 {
+    width: 75%;
+  }
+
+  .footnote-content .footnote-counter {
+    display: inline;
+    display: none;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+  .subtitle {
+    left: 50px;
+
+  }
+
+  .movimiento {
+    left: 0px;
+
+  }
+
+  .mobile-menu {
+    //display: inline-block;
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+    border: 0.2px dashed #000;
+    z-index: 2;
+    position: fixed;
+    top: 50vh;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  #main {
+    display: none;
+    height: auto;
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+
+
+    li a {
+      float: none;
+      display: block;
+
+    }
+  }
+  body {
+    padding-left: 60px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+
+  article {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 45vh;
+
+
+    blockquote {
+      margin: 0;
+
+    }
+
+  }
+
+
+  .content-article {
+    margin-left: 0;
+  }
+
+
+  #main {
+    margin-left: 0px;
+    padding: 0;
+  }
+  .pourcentage {
+    font-size: 0.9rem;
+    left: 7px !important;
+    top: 13px;
+  }
+
+
+  .notes-images {
+    position: absolute;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    opacity: 0;
+    margin-top: 200px;
+  }
+
+
+  .notes-images {
+
+    li {
+      position: relative;
+    }
+
+    position: static;
+  }
+
+  .notes-images > .footnote {
+    top: 0 !important;
+    position: relative !important;
+  }
+
+  .footnote {
+    float: right;
+    width: 100%;
+    clear: both;
+    padding-bottom: 10px;
+
+  }
+  .wrapper {
+    margin-left: 50px;
+  }
+  .title {
+    margin-bottom: 300px;
+    margin-top: 0;
+    margin-left: 50px;
+    width: 100%;
+
+
+  }
+
+
+}
+

@@ -1,0 +1,131 @@
+img {
+  width: 81%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border: 0;
+  font-family: Pacifista;
+}
+
+a:focus {
+  outline: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul,
+ol,
+li {
+  text-indent: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+sup a {
+  font-size: 0.8em;
+  font-variant-position: sub;
+  font-feature-settings: 'subs' on;
+
+
+}
+
+
+body {
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+
+}
+
+rect {
+  transition: height 2s;
+  transition: width 3s;
+
+}
+
+svg {
+  fill: none;
+  /* margin: 20px; */
+  position: fixed;
+  top: 1vh;
+  stroke: black;
+  z-index: 5;
+}
+
+circle {
+
+  transition: r 5s;
+  /* transition: width 0.8s; */
+}
+
+
+blockquote {
+  font-family: "Pacifista-Italic";
+  font-size: larger;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 400;
+  font-kerning: normal;
+  font-family: 'Public Sans';
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -moz-font-feature-settings: "kern=1", "liga=1", "calt=1";
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  width: 100%;
+  height: 100%;
+  scroll-padding-top: 200px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+article {
+  position: absolute;
+  left: 32vw;
+  top: 0;
+  padding-bottom: 5px;
+}
+
+* {
+
+  font-variant-ligatures: common-ligatures; /* high-level property          */
+  -moz-font-feature-settings: 'liga'; /* low-level (old Firefox)      */
+  -webkit-font-feature-settings: 'liga'; /* low-level (old Webkit)       */
+  font-feature-settings: 'liga' on; /* low-level (all new browsers) */
+  //font-variant-ligatures: discretionary-ligatures; /* high-level property          */
+  -moz-font-feature-settings: 'dlig'; /* low-level (old Firefox)      */
+  -webkit-font-feature-settings: 'dlig'; /* low-level (old Webkit)       */
+  font-feature-settings: 'dlig' on; /* low-level (all new browsers) */
+  font-variant-ligatures: historical-ligatures; /* high-level property          */
+  -moz-font-feature-settings: 'hlig'; /* low-level (old Firefox)      */
+  -webkit-font-feature-settings: 'hlig'; /* low-level (old Webkit)       */
+  font-feature-settings: 'hlig' on; /* low-level (all new browsers) */
+  //font-variant-alternates: contextual; /* high-level property          */
+  -moz-font-feature-settings: 'calt'; /* low-level (old Firefox)      */
+  -webkit-font-feature-settings: 'calt'; /* low-level (old Webkit)       */
+  font-feature-settings: 'calt' on; /* low-level (all new browsers) */
+
+}
+

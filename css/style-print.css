@@ -1,0 +1,200 @@
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    @page {
+        size: A4;
+        margin-top: 7mm;
+        margin-bottom: 20mm;
+        margin-left: 7mm;
+        margin-right: 20mm;
+
+        @top-left {
+
+        }
+    }
+
+    @page :nth(3) {
+        @bottom-left {
+            content: none;
+        }
+        @bottom-center {
+            content: none;
+        }
+        @bottom-right {
+            content: none;
+        }
+    }
+
+
+    @page :blank {
+        @bottom-left {
+            content: none;
+        }
+        @bottom-center {
+            content: none;
+        }
+        @bottom-right {
+            content: none;
+        }
+    }
+
+    @page :first {
+        margin: 10mm 10mm;
+        @bottom-left {
+            content: none;
+        }
+
+    }
+
+    @page :left {
+        @bottom-left {
+            content: counter(page);
+            width: 40px;
+        }
+        @bottom-center {
+            content: "Station of Commons";
+            text-align: center;
+        }
+    }
+
+    /* RIGHT PAGES -------------------------------- */
+    @page :right {
+
+        @bottom-left {
+            content: counter(page);
+            width: 40px;
+        }
+        @bottom-center {
+            content: "Together Alone - open call";
+            text-align: center;
+        }
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        overscroll-behavior: none;
+        line-height: 1.4;
+        font-size: 14px;
+        font-weight: 400;
+        font-kerning: normal;
+        font-family: 'Public Sans';
+        -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+        -moz-font-feature-settings: "kern=1", "liga=1", "calt=1";
+        -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+        font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale;
+        font-variant-ligatures: common-ligatures discretionary-ligatures;
+    }
+
+    a {
+
+        font-family: 'Till';
+        text-decoration: none;
+        color: black;
+    }
+
+    h1 {
+        font-family: 'Till';
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-top: 0;
+
+    }
+
+    h2 {
+        font-family: 'Till';
+        font-weight: normal;
+        font-size: 3rem;
+        break-before: page;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-family: 'Till';
+        font-weight: normal;
+        font-size: 1.5rem;
+        margin-top: 0;
+
+    }
+
+    .content-article {
+
+
+    }
+
+    p, li {
+        width: 147mm;
+
+    }
+
+    #main {
+        list-style: decimal;
+        break-after: page;
+        font-size: 2em;
+    }
+
+
+    #cover {
+        break-after: page;
+        font-family: 'Till';
+    }
+
+    #cover h1 {
+
+        font-size: 7rem;
+
+    }
+
+    #cover img {
+        mix-blend-mode: lighten;
+    }
+
+
+    .chapter {
+        break-before: right;
+    }
+
+
+    figure, img {
+        width: 100%;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    tr {
+        margin-top: 15px;
+
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    p strong {
+        page-break-inside: avoid;
+
+    }
+
+    p {
+        page-break-inside: avoid;
+
+    }
+
+    table {
+
+        border-spacing: 10px;
+    }
+
+
+}
+
+

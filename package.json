@@ -1,0 +1,26 @@
+{
+  "name": "Paged.js-CV",
+  "version": "1.0.0",
+  "description": "Using Paged.js to create a website and a pdf file for a CV",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:css": "parcel dev/_main.scss --no-hmr --out-dir ./css --out-file style-screen.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "css": "^2.2.4",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.25.0"
+  },
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
+}

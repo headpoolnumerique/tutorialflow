@@ -1,0 +1,23 @@
+/* Till Normal by Pauline le Pape*/
+
+@font-face {
+    font-family: 'Till';
+    src: url("fonts/Till-Normal.otf") format("opentype");
+    font-weight: normal;
+}
+
+/* https://github.com/uswds/public-sans*/
+
+/* Public Sans is licensed under the SIL Open Font License, Version 1.1*/
+
+@font-face {
+    font-family: 'Public Sans', sans-serif;
+    src: url("fonts/Public-Sans-Roman-VF.ttf") format("truetype");
+
+}
+
+@font-face {
+    font-family: 'Public Sans Italic', sans-serif;
+    src: url("fonts/Public-Sans-Italic-VF.ttf") format("truetype");
+
+}

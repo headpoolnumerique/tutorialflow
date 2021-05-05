@@ -1,0 +1,192 @@
+.wrapper {
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#cover {
+  font-family: 'Till';
+  position: fixed;
+  top: 10px;
+  z-index: 5;
+  pointer-events: none;
+  font-size: 8em;
+  line-height: 1.1;
+  margin-top: 0;
+  transition: 0.7s;
+  margin-left: 10px;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+}
+
+
+#cover {
+  display: none;
+}
+
+#main {
+  font-family: "Public Sans";
+  padding-left: 0;
+  line-height: 1.2;
+  transition: 0.2s;
+  z-index: 15;
+
+
+  li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+
+  a {
+
+    font-family: "Public Sans";
+    font-weight: 500;
+    transition: 0.7s;
+
+  }
+
+  a:hover {
+    font-weight: 700;
+
+
+  }
+
+  a.active {
+
+    //background-color: blueviolet;
+
+  }
+}
+
+
+.content-article {
+
+
+  H1 {
+    font-size: 1.9em;
+    font-family: 'Till';
+    font-weight: normal;
+  }
+
+  H2 {
+    font-size: 1.9em;
+    font-family: 'Till';
+    font-weight: normal;
+  }
+
+  ul,
+  ol,
+  li {
+
+    list-style: decimal;
+  }
+
+  em {
+    font-family: "Public Sans Italic";
+    display: block;
+    width: 81%;
+    font-weight: 100;
+    font-size: 0.8em;
+  }
+
+}
+
+.break {
+  display: block;
+}
+
+
+.notes-images {
+  position: absolute;
+  right: 65vw;
+  margin-right: -230px;
+  width: 400px;
+  opacity: 0;
+  top: 0;
+  display: grid;
+}
+
+.footnote {
+  float: right;
+  width: 200px;
+  margin-right: 50px;
+  clear: both;
+  padding-bottom: 10px;
+
+  p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.2;
+    font-weight: 100;
+  }
+
+  strong {
+    font-family: 'Till';
+    display: inline-block;
+    font-weight: normal;
+  }
+
+  .footnote-counter {
+    display: block;
+    font-weight: 200;
+    font-size: 0.8em;
+    font-family: Pacifista;
+  }
+
+
+  a {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    //white-space: nowrap;
+  }
+
+  .footnote-backref {
+    visibility: hidden;
+  }
+
+}
+
+.pourcentage {
+  position: fixed;
+  top: 70px;
+  text-align: right;
+  pointer-events: none;
+  line-height: 1.3;
+  font-size: 0.8em;
+  opacity: 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+
+.mobile-menu {
+  display: none;
+}
+
+
+//.footnote-ref a::before{
+//
+//  content: "<span style= ' white-space : nowrap'>&thinsp;</span>;"
+//
+//
+//
+//}

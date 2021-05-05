@@ -1,0 +1,434 @@
+img {
+  width: 81%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border: 0;
+  font-family: Pacifista;
+}
+
+a:focus {
+  outline: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul,
+ol,
+li {
+  text-indent: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+sup a {
+  font-size: 0.8em;
+  font-variant-position: sub;
+  font-feature-settings: "subs" on;
+}
+
+body {
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+rect {
+  transition: height 2s;
+  transition: width 3s;
+}
+
+svg {
+  fill: none;
+  /* margin: 20px; */
+  position: fixed;
+  top: 1vh;
+  stroke: black;
+  z-index: 5;
+}
+
+circle {
+  transition: r 5s;
+  /* transition: width 0.8s; */
+}
+
+blockquote {
+  font-family: "Pacifista-Italic";
+  font-size: larger;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 400;
+  font-kerning: normal;
+  font-family: "Public Sans";
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -moz-font-feature-settings: "kern=1", "liga=1", "calt=1";
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  width: 100%;
+  height: 100%;
+  scroll-padding-top: 200px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  position: absolute;
+  left: 32vw;
+  top: 0;
+  padding-bottom: 5px;
+}
+
+* {
+  font-variant-ligatures: common-ligatures;
+  /* high-level property          */
+  -moz-font-feature-settings: "liga";
+  /* low-level (old Firefox)      */
+  -webkit-font-feature-settings: "liga";
+  /* low-level (old Webkit)       */
+  font-feature-settings: "liga" on;
+  /* low-level (all new browsers) */
+  -moz-font-feature-settings: "dlig";
+  /* low-level (old Firefox)      */
+  -webkit-font-feature-settings: "dlig";
+  /* low-level (old Webkit)       */
+  font-feature-settings: "dlig" on;
+  /* low-level (all new browsers) */
+  font-variant-ligatures: historical-ligatures;
+  /* high-level property          */
+  -moz-font-feature-settings: "hlig";
+  /* low-level (old Firefox)      */
+  -webkit-font-feature-settings: "hlig";
+  /* low-level (old Webkit)       */
+  font-feature-settings: "hlig" on;
+  /* low-level (all new browsers) */
+  -moz-font-feature-settings: "calt";
+  /* low-level (old Firefox)      */
+  -webkit-font-feature-settings: "calt";
+  /* low-level (old Webkit)       */
+  font-feature-settings: "calt" on;
+  /* low-level (all new browsers) */
+}
+
+.wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#cover {
+  font-family: "Till";
+  position: fixed;
+  top: 10px;
+  z-index: 5;
+  pointer-events: none;
+  font-size: 8em;
+  line-height: 1.1;
+  margin-top: 0;
+  transition: 0.7s;
+  margin-left: 10px;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+}
+
+#cover {
+  display: none;
+}
+
+#main {
+  font-family: "Public Sans";
+  padding-left: 0;
+  line-height: 1.2;
+  transition: 0.2s;
+  z-index: 15;
+}
+#main li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#main a {
+  font-family: "Public Sans";
+  font-weight: 500;
+  transition: 0.7s;
+}
+#main a:hover {
+  font-weight: 700;
+}
+.content-article H1 {
+  font-size: 1.9em;
+  font-family: "Till";
+  font-weight: normal;
+}
+.content-article H2 {
+  font-size: 1.9em;
+  font-family: "Till";
+  font-weight: normal;
+}
+.content-article ul,
+.content-article ol,
+.content-article li {
+  list-style: decimal;
+}
+.content-article em {
+  font-family: "Public Sans Italic";
+  display: block;
+  width: 81%;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+.break {
+  display: block;
+}
+
+.notes-images {
+  position: absolute;
+  right: 65vw;
+  margin-right: -230px;
+  width: 400px;
+  opacity: 0;
+  top: 0;
+  display: grid;
+}
+
+.footnote {
+  float: right;
+  width: 200px;
+  margin-right: 50px;
+  clear: both;
+  padding-bottom: 10px;
+}
+.footnote p {
+  margin: 0;
+  font-size: 0.8em;
+  line-height: 1.2;
+  font-weight: 100;
+}
+.footnote strong {
+  font-family: "Till";
+  display: inline-block;
+  font-weight: normal;
+}
+.footnote .footnote-counter {
+  display: block;
+  font-weight: 200;
+  font-size: 0.8em;
+  font-family: Pacifista;
+}
+.footnote a {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+.footnote .footnote-backref {
+  visibility: hidden;
+}
+
+.pourcentage {
+  position: fixed;
+  top: 70px;
+  text-align: right;
+  pointer-events: none;
+  line-height: 1.3;
+  font-size: 0.8em;
+  opacity: 0;
+}
+.pourcentage p {
+  margin: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 667px) {
+  #main {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  em {
+    display: block;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  article {
+    margin-left: 0;
+    padding-right: 2.5vw;
+    display: contents;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  article h3 {
+    width: 75%;
+  }
+
+  .footnote-content .footnote-counter {
+    display: inline;
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .subtitle {
+    left: 50px;
+  }
+
+  .movimiento {
+    left: 0px;
+  }
+
+  .mobile-menu {
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+    border: 0.2px dashed #000;
+    z-index: 2;
+    position: fixed;
+    top: 50vh;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+
+  #main {
+    display: none;
+    height: auto;
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+  }
+  #main li a {
+    float: none;
+    display: block;
+  }
+
+  body {
+    padding-left: 60px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  article {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 45vh;
+  }
+  article blockquote {
+    margin: 0;
+  }
+
+  .content-article {
+    margin-left: 0;
+  }
+
+  #main {
+    margin-left: 0px;
+    padding: 0;
+  }
+
+  .pourcentage {
+    font-size: 0.9rem;
+    left: 7px !important;
+    top: 13px;
+  }
+
+  .notes-images {
+    position: absolute;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    opacity: 0;
+    margin-top: 200px;
+  }
+
+  .notes-images {
+    position: static;
+  }
+  .notes-images li {
+    position: relative;
+  }
+
+  .notes-images > .footnote {
+    top: 0 !important;
+    position: relative !important;
+  }
+
+  .footnote {
+    float: right;
+    width: 100%;
+    clear: both;
+    padding-bottom: 10px;
+  }
+
+  .wrapper {
+    margin-left: 50px;
+  }
+
+  .title {
+    margin-bottom: 300px;
+    margin-top: 0;
+    margin-left: 50px;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=/style-screen.css.map */
