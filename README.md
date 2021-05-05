@@ -11,7 +11,6 @@
 **Tracks ARTE**
 *Entre Paris, New-York et Londres, lo-tech et repeti-life, ils font bouger les murs et secouent la mode !*
 
-{%youtube JOWrgAYxzWA %}
 
 [Voici le programme en pdf](https://drive.switch.ch/index.php/s/PTJjyEFwRkhec5w) 
 
