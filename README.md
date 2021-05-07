@@ -17,5 +17,14 @@ year: 2020
 ---
 ~~~
 
-## Installation
+## Installation and dependencies
 
+  - [pagedjs](https://www.pagedjs.org/)
+
+## Github Pages Action workflow
+
+tbd
+
+## Credits
+
+Juan Gomez & Gordan Savicic, 2021
