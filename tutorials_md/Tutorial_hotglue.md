@@ -1,8 +1,8 @@
 ---
 title: Cours WEB
-description: Site web avec Hotglue
+description: Un cours donné par HG
 lang: FR
-tags: tutorials,web,hotglue
+tags: tutorials,support,web,3D 
 year: 2020
 ---
 
