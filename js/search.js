@@ -2,7 +2,7 @@ $(document).ready(function () {
     let all_tags = [];
     let unique_tags = [];
 
-    $.get("./devjs/out.json", function (data) {
+    $.get("./tutorials_md/tuto_list.json", function (data) {
         
         // obtaining all tags from json
         data.forEach(function (d) {
