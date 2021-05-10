@@ -1,8 +1,10 @@
 $(document).ready(function () {
     let all_tags = [];
     let unique_tags = [];
+
     $.get("./devjs/out.json", function (data) {
-        $("#main").html = "<li>test</li>";
+        
+        // obtaining all tags from json
         data.forEach(function (d) {
             try {
                 if (d.tags !== undefined)
@@ -15,8 +17,8 @@ $(document).ready(function () {
         all_tags = all_tags.split(",").filter(item => item); // remove empty entries from array with filter
         unique_tags = all_tags.filter(onlyUnique);
         
+        // build the filter buttons
         let docFrag = document.createDocumentFragment();
-
         unique_tags.forEach(function (filter_text) {
             let filter_button = document.createElement("button");
             filter_button.setAttribute('text', filter_text);
@@ -26,12 +28,8 @@ $(document).ready(function () {
         });
 
         $("#main").append(docFrag);
-        // count how many tags are inside all_tags array
-        let counts = {};
-        all_tags.forEach(function (x) {
-            counts[x] = (counts[x] || 0) + 1;
-        });
-        //console.log(counts)
+       
+        // filters clicked 
         $(".filter_button").on("click", function () {
             $(this).toggleClass("active");
             updateResults(data);
@@ -43,6 +41,7 @@ function updateResults(data) {
     let active_ones = document.querySelectorAll(".active");
     let active_tags = []
     
+    // build array with filter tag entries that are selected active
     active_ones.forEach(function (tag) {
         active_tags.push($(tag).text());
     })
@@ -78,7 +77,12 @@ function buildList(data) {
         let tuto_button = document.createElement("button");
         tuto_button.setAttribute('text', d.description);
         tuto_button.setAttribute('class', "tuto_button");
+        tuto_button.setAttribute('data-filename', d.filename);
         tuto_button.innerHTML = d.title;
+        tuto_button.addEventListener("click",function() {
+            let filename = $(this).attr("data-filename");
+
+        })
         docFrag.appendChild(tuto_button);
     });
 

@@ -1,7 +1,7 @@
 const path = require('path')
 const metadataParser = require('markdown-yaml-metadata-parser')
 const fs = require('fs');
-const mdFolder = '../tutorials_md/';
+const mdFolder = './tutorials_md/';
 let results = [];
 
 function writeContent(callback) {

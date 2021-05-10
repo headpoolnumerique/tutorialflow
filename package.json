@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "json": "node devjs/readmd.js",
     "dev:css": "parcel dev/_main.scss --no-hmr --out-dir ./css --out-file style-screen.css"
   },
   "repository": {
