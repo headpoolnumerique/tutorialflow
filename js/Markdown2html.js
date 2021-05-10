@@ -1,12 +1,10 @@
 var md = window.markdownit()
-        .use(markdownitFootnote)
-        .use(markdownitContainer),
+    .use(markdownitFootnote)
+    .use(markdownitContainer),
     warning;
 
-$.get("README.md", function (data) {
+$.get("../tutorials_md/Tutorial_hotglue.md", function (data) {
     $('#content-markdown').html(md.render(data));
-
-
 });
 
 // wait for the page to load
