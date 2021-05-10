@@ -60,7 +60,8 @@ function updateResults(data) {
             // get tags from yaml header and then compare to array with active filter buttons
             let tags_array = d.tags.replace(/\s/g,'').split(",")
             const newarr =filterArray(tags_array, active_tags);
-            if (newarr.length > 0) return d;    
+            // return d only if tags are matching with active tag button list
+            if (newarr.length == active_tags.length && newarr.length>0) return d;    
         }
     }
 
