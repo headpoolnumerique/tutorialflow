@@ -3,7 +3,7 @@ title: Tutoriel Markdown
 description: Un cours donné par Juan Gomez
 lang: FR
 image: 
-tags: tutorials,support,web,3D 
+tags: tutorials,markdown,publishing 
 year: 2021
 ---
 
