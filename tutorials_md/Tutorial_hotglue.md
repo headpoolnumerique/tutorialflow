@@ -1,6 +1,6 @@
 ---
-title: Cours WEB
-description: Site web avec Hotglue
+title: Cours Hotglue
+description: Création site web simple avec Hotglue
 lang: FR
 tags: tutorials,web,hotglue
 year: 2020

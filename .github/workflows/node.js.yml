@@ -29,3 +29,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run json
+    - name: Deploy Files
+      run: |
+        git add tutorials_md/tuto_list.json
+        git commit -m "Automatic update of tuto_list.json via Github action"
+        git push
